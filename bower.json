@@ -1,0 +1,26 @@
+{
+  "name": "snowl",
+  "version": "1.0.0",
+  "homepage": "https://snowl.co",
+  "authors": [
+    "Artiom Vladimir <artiom.vladimir@gmail.com>",
+    "Olesea Solovei <myqbeez@gmail.com>",
+    "Vadim Solovei <chillout05@gmail.com>"
+  ],
+  "description": "snowl",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.3"
+  }
+}
