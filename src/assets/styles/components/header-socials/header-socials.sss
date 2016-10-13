@@ -1,0 +1,21 @@
+.header-socials
+	&
+		display: flex
+
+	&__item
+		display: flex
+		align-items: center
+		font-family: $ff-fnm
+		font-size: 24px
+		color: #fff
+		margin-right: 45px
+		transition: .2s
+
+		&:hover, &:hover .header-socials__icon
+			fill: darken(#fff, 20%)
+			color: darken(#fff, 20%)
+
+	&__icon
+		fill: #fff
+		transition: .2s
+		margin-right: 13px
