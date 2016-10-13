@@ -20,6 +20,7 @@ var
 	imagesMin = require('./tasks/images_min'),
 	templates = require('./tasks/templates'),
 	// sprites = require('./tasks/sprites/sprites'),
+	fonts = require('./tasks/fonts')
 	watch = require('./tasks/watch'),
 	bower = require('./tasks/bower'),
 	browsersync = require('./tasks/browsersync'),
@@ -47,6 +48,8 @@ gulp.task('templates', templates);
 
 // gulp.task('sprites', sprites);
 
+gulp.task('fonts', fonts);
+
 gulp.task('bower', bower);
 
 gulp.task('watch', watch);
@@ -70,7 +73,7 @@ gulp.task('w3c:html', w3cHTML);
 
 // Run all tasks
 gulp.task('default',
-	gulp.series('bower', 'images', 'styles', 'scripts', 'templates')
+	gulp.series('bower', 'images', 'styles', 'scripts', 'templates', 'fonts')
 );
 
 gulp.task('dev',
