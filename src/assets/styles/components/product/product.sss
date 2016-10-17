@@ -1,0 +1,67 @@
+.product
+	&
+		width: 1440px
+		margin: 0 auto
+		background: #fff
+		position: relative
+		top: -120px
+		z-index: 2
+		// padding: 120px 130px
+		// box-sizing: border-box
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		width: 50%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-family: $ff-fnd
+		box-sizing: border-box
+		padding: 70px 90px 60px 130px
+		position: relative
+
+		&:nth-child(-n+2)
+			align-items: flex-start
+			padding-top: 115px
+
+		&:nth-child(-n+2):before
+			content: ''
+			position: absolute
+			left: 55px
+			bottom: 0
+			width: 85%
+			height: 1px
+			background: rgba(#000, .1)
+
+		&:nth-child(odd):after
+			content: ''
+			position: absolute
+			top: 30px
+			right: 0
+			width: 1px
+			height: 85%
+			background: rgba(#000, .1)
+
+		&:nth-child(even)
+			padding-left: 130px
+
+	&__specification
+		font-size: 30px
+		width: 165px
+
+	&__price
+		color: rgba(#2e3c40, .4)
+		margin: 5px 0 30px
+
+	&__name
+		color: #2e3c40
+		margin-bottom: 30px
+		line-height: 35px
+
+	&__description
+		font-size: 18px
+		color: rgba(#2e3c40, .3)
+		line-height: 22px
