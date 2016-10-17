@@ -2,12 +2,28 @@
 	&
 		position: relative
 		z-index: 1
+		max-height: 820px
+		overflow: hidden
 
 	&__video
-		background: url(../images/videoframe.jpg) no-repeat
-		background-size: cover
-		width: 100%
-		height: 820px
+		// background: url(../images/videoframe.jpg) no-repeat
+		// background-size: cover
+		// width: 100%
+		// height: 820px
+		position: relative
+
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			background: #b69e73
+			opacity: .6
+			z-index: 1
 
 	&__text
 		position: absolute
@@ -15,9 +31,11 @@
 		left: 50%
 		transform: translate(-50%, -60%)
 		text-align: center
+		z-index: 1
 
 	&__title
 		font-size: 140px
+		color: #fff
 		line-height: 100px
 		margin-bottom: 40px
 
@@ -25,3 +43,4 @@
 		font-size: 54px
 		width: 650px
 		margin: 0 auto
+		color: rgba(#fff, .4)

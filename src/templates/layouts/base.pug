@@ -12,11 +12,15 @@ html
 		include ../helpers/bemto/bemto
 		
 		block body
-			block header
-			
-			block container
-			
-			block footer
+			+b.layout
+				+e.header
+					block header
+					
+				+e.container
+					block container
+					
+				+e.footer
+					block footer
 
 		include ../partials/scripts
 		
