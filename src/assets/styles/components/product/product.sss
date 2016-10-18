@@ -53,18 +53,23 @@
 		width: 165px
 
 	&__price
-		color: rgba(#2e3c40, .4)
+		color: rgba($font-color, .4)
 		margin: 5px 0 30px
 
 	&__name
-		color: #2e3c40
+		color: $font-color
 		margin-bottom: 30px
 		line-height: 35px
 
 	&__description
 		font-size: 18px
-		color: rgba(#2e3c40, .3)
+		color: rgba($font-color, .3)
 		line-height: 22px
 
 	&__image img
 		filter: drop-shadow(12px 16px 95px rgba(#000, .1))
+
+		&:hover
+			cursor: url(../images/icons/search.png), auto
+			transform: scale(1.1)
+			transition: .1s
