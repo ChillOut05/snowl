@@ -1,0 +1,39 @@
+.socials
+	&
+		width: 1680px
+		height: 520px
+		margin: -100px auto 0
+		background: #252c35
+		display: flex
+		justify-content: center
+		align-items: center
+
+	&__list
+		display: flex
+
+	&__item
+		display: flex
+		align-items: center
+		margin-right: 125px
+
+		&:last-child
+			margin-right: 0
+
+	&__link
+		font-size: 24px
+		font-family: $ff-fnm
+		color: #fff
+		display: flex
+		align-items: center
+
+		&:hover
+			color: #3792c7
+			transition: .2s
+
+		&:hover .socials__icon
+			transition: .2s
+			fill: #3792c7
+
+	&__icon
+		fill: #fff
+		margin-right: 15px
