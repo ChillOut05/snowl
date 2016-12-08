@@ -1,10 +1,30 @@
 .header
-	padding: 80px
-	display: flex
-	align-items: center
-	justify-content: space-between
-	background: transparent
-	position: absolute
+	&
+		padding: 4.2vw 80px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		background: transparent
+		position: absolute
+		left: 0
+		right: 0
+		z-index: 2
+
+	&__logo
+		@mixin center
+
+.header_sticky
+	padding: 50px 80px
+	transform: translateY(-100%)
+	position: fixed
+	top: 0
 	left: 0
-	right: 0
-	z-index: 2
+	background: #fff
+	z-index: 10
+	transition: all 0.25s ease-in-out
+	opacity: 0
+
+.header_sticky.-stick
+	transform: translateY(0)
+	opacity: 1
+	will-change: transform

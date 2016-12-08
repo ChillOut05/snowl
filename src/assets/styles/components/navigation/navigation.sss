@@ -1,4 +1,19 @@
 .navigation
+	&
+		margin-left: 45px
+
+	&__opener
+		display: none
+		width: 27px
+		height: 21px
+		max-width: 27px
+		max-height: 21px
+		transition: .2s
+		fill: #fff
+
+		&:hover
+			fill: darken(#fff, 20%)
+
 	&__item
 		&
 			float: left
@@ -15,3 +30,16 @@
 
 		&:hover
 			color: darken(#fff, 20%)
+
+.navigation_sticky
+	.navigation__link
+		color: rgba(#000, .4)
+
+		&:hover
+			color: $green
+
+	.navigation__opener
+		fill: rgba(#000, .4)
+
+		&:hover
+			fill: $green
