@@ -2,6 +2,18 @@
 	&
 		display: flex
 
+	&__opener
+		display: none
+		width: 36px
+		height: 36px
+		max-width: 36px
+		max-height: 36px
+		transition: .2s
+		fill: #fff
+
+		&:hover
+			fill: darken(#fff, 20%)
+
 	&__item
 		display: flex
 		align-items: center
@@ -19,3 +31,28 @@
 		fill: #fff
 		transition: .2s
 		margin-right: 13px
+
+	&__icon_instagram
+		width: 1.3vw
+		height: 1.3vw
+
+	&__icon_facebook
+		width: 0.7vw
+		height: 1.3vw
+
+.header-socials_sticky
+	.header-socials__item
+		color: rgba(#000, .4)
+
+		&:hover, &:hover .header-socials__icon
+			color: $green
+			fill: $green
+
+	.header-socials__icon
+		fill: rgba(#000, .4)
+
+	.header-socials__opener
+		fill: rgba(#000, .4)
+
+		&:hover
+			fill: $green
