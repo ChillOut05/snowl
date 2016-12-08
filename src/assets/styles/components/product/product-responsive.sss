@@ -1,0 +1,105 @@
+@media (max-width: 1024px)
+	.product
+		&__specification
+			font-size: 21px
+
+		&__description
+			font-size: 15px
+
+		&__link
+			font-size: 15px
+
+		&__link-icon svg
+			height: 8px
+
+@media (max-width: 768px)
+	.product
+		&__specification
+			width: 60%
+
+@media (min-width: 641px)
+	.product
+		// &__slider
+		// 	display: none !important
+
+		&__image img:hover
+			cursor: url(../images/icons/zoom-in.png), auto
+			transform: scale(1.1)
+			transition: .2s
+
+@media (max-width: 640px)
+	.product
+		&
+			width: 79.5%
+			margin-top: -15vw
+			margin-bottom: 15vw
+
+		&__list
+			flex-direction: column
+			padding: 17vw 13vw 0
+
+		// &__list > .product__item_slide
+		// 	display: none
+
+		&__item
+			width: 100%
+			flex-direction: column
+			padding: 0 0 15vw !important
+
+			&:after
+				content: none !important
+
+			&:before
+				content: ''
+				position: absolute
+				left: 7%
+				bottom: 0
+				width: 86%
+				height: 1px
+				background: rgba(#000, .1)
+
+			&:last-child:before
+				content: none
+
+		&__image
+			width: 100%
+			display: none
+
+		&__image_mobile
+			display: block
+
+		&__specification
+			font-size: 30px
+			order: 2
+			width: 100%
+
+		&__price
+			margin-bottom: 20px
+
+		&__name
+			margin-bottom: 20px
+
+		&__description
+			font-size: 24px
+			margin-bottom: 10px
+
+		&__slider
+			display: block
+
+		&__link
+			font-size: 24px
+
+		&__link-icon svg
+			height: 10px
+
+@media (max-width: 320px)
+	.product
+
+		&__specification
+			font-size: 27px
+
+		&__description
+			font-size: 16px
+
+		&__link
+			font-size: 16px

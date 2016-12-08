@@ -1,13 +1,11 @@
 .product
 	&
-		width: 1440px
-		margin: -120px auto 55px
+		width: 75%
+		margin: -6.3vw auto 60px
 		background: #fff
 		position: relative
 		z-index: 2
 		box-shadow: 0px 0px 80px 0px rgba(#000, .1)
-		// padding: 120px 130px
-		// box-sizing: border-box
 
 	&__list
 		display: flex
@@ -17,59 +15,127 @@
 		width: 50%
 		display: flex
 		justify-content: space-between
-		align-items: center
 		font-family: $ff-fnd
 		box-sizing: border-box
-		padding: 70px 90px 60px 130px
+		padding: 5% 6.25% 5% 9%
 		position: relative
+		border: none
+		outline: none
 
 		&:nth-child(-n+2)
-			align-items: flex-start
-			padding-top: 115px
+			padding-top: 8%
 
-		&:nth-child(-n+2):before
+		&:nth-child(1):before
 			content: ''
 			position: absolute
-			left: 55px
+			left: 7%
 			bottom: 0
-			width: 85%
+			width: 86%
 			height: 1px
 			background: rgba(#000, .1)
 
-		&:nth-child(odd):after
+		&:nth-child(2):before
 			content: ''
 			position: absolute
-			top: 30px
-			right: 0
-			width: 1px
-			height: 85%
+			right: 7%
+			bottom: 0
+			width: 86%
+			height: 1px
 			background: rgba(#000, .1)
 
-		&:nth-child(even)
-			padding-left: 130px
+		&:nth-child(1):after
+			content: ''
+			position: absolute
+			top: 6%
+			right: 0
+			width: 1px
+			height: 84%
+			background: rgba(#000, .1)
+
+		&:nth-child(3):after
+			content: ''
+			position: absolute
+			bottom: 10%
+			right: 0
+			width: 1px
+			height: 80%
+			background: rgba(#000, .1)
 
 	&__specification
-		font-size: 30px
-		width: 165px
+		font-size: 1.5vw
+		width: 50%
 
 	&__price
 		color: rgba($font-color, .4)
-		margin: 5px 0 30px
+		margin: 5px 0 10%
 
 	&__name
 		color: $font-color
-		margin-bottom: 30px
-		line-height: 35px
+		margin-bottom: 10%
+		line-height: 1.2
+		display: block
+		transition: .2s
+
+		&:hover, &:hover ~ .product__link, &:hover ~ .product__link > .product__link-icon svg
+			color: $green
+			fill: $green
 
 	&__description
-		font-size: 18px
+		font-size: 1.3vw
 		color: rgba($font-color, .3)
-		line-height: 22px
+		line-height: 1.2
+		margin-bottom: 9%
 
-	&__image img
-		filter: drop-shadow(12px 16px 95px rgba(#000, .1))
+	&__link
+		font-size: 1.5vw
+		transition: .2s
+		color: $font-color
 
 		&:hover
-			cursor: url(../images/icons/search.png), auto
-			transform: scale(1.1)
-			transition: .1s
+			color: $green
+
+		&:hover svg
+			fill: $green
+
+	&__link-icon svg
+		position: relative
+		top: 0
+		left: 0
+		height: 0.7vw
+		fill: $font-color
+		transition: .2s
+
+	&__image
+		border: none
+		outline: none
+		align-self: center
+		width: 10.5vw
+
+	&__image_top
+		position: relative
+		top: -30px
+
+	&__image_mobile
+		display: none
+
+	&__image img
+		width: 100%
+		border: none
+		outline: none
+		height: auto
+
+	&__dots
+		display: flex
+		justify-content: center
+		align-items: center
+
+	&__dots button
+		width: 16px
+		height: 16px
+		border: 2px solid #ccc
+		border-radius: 50%
+		margin-right: 25px
+		cursor: pointer
+
+	&__dots .slick-active button
+		background: #ccc
