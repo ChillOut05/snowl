@@ -34,7 +34,7 @@ function styles() {
 			sassColor,
 			shortCSS,
 			autoprefixer({
-				browsers: ['last 2 versions'],
+				browsers: ['last 10 versions'],
 				cascade: false
 			})
 		], { parser: sugarss } ) )
