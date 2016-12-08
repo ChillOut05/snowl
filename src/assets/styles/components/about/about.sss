@@ -1,22 +1,24 @@
 .about
 	&
-		width: 910px
-		margin: 0 auto 75px
+		width: 48%
+		margin: 0 auto 60px
 
 	&__header
 		text-align: center
+		margin-bottom: 60px
 
 	&__title
-		font-size: 60px
-		line-height: 100px
+		font-size: 3vw
+		line-height: 1.7
 		color: $font-color
+		font-family: $ff-fnd
 
 	&__subtitle
-		width: 475px
-		font-size: 30px
-		line-height: 35px
+		width: 53%
+		font-size: 1.5vw
+		line-height: 1.2
 		color: rgba($font-color, .4)
-		margin: 0 auto 60px
+		margin: 0 auto
 
 	&__content
 		display: flex
@@ -24,15 +26,27 @@
 		align-items: baseline
 		text-align: center
 
+	&__item
+		display: flex
+		flex-direction: column
+		flex-basis: 250px
+		flex-wrap: wrap
+		align-items: center
+		margin-right: 30px
+
+		&:last-child
+			margin: 0
+
 	&__icon
-		margin-bottom: 20px
+		width: 3.5vw
+		min-width: 50px
+		margin-bottom: 15%
 
 	&__icon svg
 		fill: $font-color
 
 	&__description
-		font-size: 24px
+		font-size: 1.3vw
 		font-family: $ff-fnm
-		line-height: 30px
+		line-height: 1.2
 		color: $font-color
-		width: 200px
