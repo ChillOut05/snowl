@@ -25,6 +25,13 @@
 		&:nth-child(-n+2)
 			padding-top: 8%
 
+		&:nth-child(1):hover
+			cursor: pointer
+
+		&:nth-child(1):hover .info__title, &:nth-child(1):hover .info__title svg
+			color: $green
+			fill: $green
+
 		&:nth-child(1):before
 			content: ''
 			position: absolute
