@@ -48,7 +48,7 @@
   "scripts": {
     "gulp": "./node_modules/.bin/gulp",
     "start": "gulp dev",
-    "prod": "gulp production",
+    "production": "gulp production",
     "deploy": "gulp deploy",
     "validate": "gulp validate",
     "minify": "gulp minify"
