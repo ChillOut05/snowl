@@ -1,38 +1,27 @@
 .info
 	&
-		margin-top: -15px
+		margin-top: -5px
 
 	&__title
 		font-size: 3vw
-		line-height: 1.5
+		display: block
 		color: $font-color
-		font-family: $ff-fnd
-		margin-bottom: 2%
-
-	&__subtitle
-		font-size: 1.5vw
-		line-height: 1.2
-		color: rgba($font-color, .4)
-		width: 80%
-		margin-bottom: 6%
-
-	&__link
-		font-size: 1.5vw
-		color: $green
 		transition: .2s
+		margin-bottom: 5%
 
-		&:hover
-			color: darken($green, 20%)
-
-		&:hover svg
-			fill: darken($green, 20%)
-
-	&__link-icon
+	&__title-icon
 		position: relative
 		top: 0
 		left: 7px
 
-	&__link-icon svg
-		height: 0.7vw
-		fill: $green
+	&__title-icon svg
+		height: 1vw
+		fill: $font-color
 		transition: .2s
+
+	&__subtitle
+		font-size: 1.4vw
+		line-height: 1.2
+		color: rgba($font-color, .4)
+		width: 80%
+		margin-bottom: 6%
