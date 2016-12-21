@@ -1,5 +1,21 @@
+@media (min-width: 1024px)
+	.promo
+		&
+			min-height: 400px
+
+@media (max-width: 1024px)
+	.promo
+		&
+			height: 70vw
+
+		&__video
+			display: none
+
 @media (max-width: 768px)
 	.promo
+		&
+			height: 70vw
+
 		&__text
 			width: 100%
 			padding: 0 70px
@@ -10,18 +26,10 @@
 		&__subtitle
 			font-size: 30px
 
-@media (min-width: 641px)
-	.promo
-		&
-			min-height: 400px
-
 @media (max-width: 640px)
 	.promo
 		&
 			height: 111.8vw
-
-		&__video
-			display: none
 
 		&__title
 			font-size: 12.5vw
