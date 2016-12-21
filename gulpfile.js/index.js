@@ -81,7 +81,7 @@ gulp.task('dev',
 );
 
 gulp.task('minify',
-	gulp.series('images:min')
+	gulp.series('images:min', 'styles:min', 'scripts:min')
 );
 
 gulp.task('production',
